@@ -10,7 +10,7 @@ class CheckpointLoaderText:
                              }}
     RETURN_TYPES = ("MODEL", "CLIP", "VAE")
     FUNCTION = "load_checkpoint"
-    CATEGORY = "TextFormater/BasicNodes"
+    CATEGORY = "TextFormatter/BasicNodes"
     def load_checkpoint(self, ckpt_name):
         ckpt_path = folder_paths.get_full_path("checkpoints", ckpt_name)
         out = comfy.sd.load_checkpoint_guess_config(ckpt_path, output_vae=True, output_clip=True, embedding_directory=folder_paths.get_folder_paths("embeddings"))
@@ -32,7 +32,7 @@ class LoraLoaderText:
     FUNCTION = "load_lora"
 
     CATEGORY = "loaders"
-    CATEGORY = "TextFormater/BasicNodes"
+    CATEGORY = "TextFormatter/BasicNodes"
     def load_lora(self, model, clip, lora_name, strength_model, strength_clip):
         if strength_model == 0 and strength_clip == 0:
             return (model, clip)

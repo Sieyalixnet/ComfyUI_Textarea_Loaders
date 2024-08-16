@@ -22,3 +22,8 @@ The input of lora loader and Checkpoints loader become Textarea instead of a fil
 ![with_extension](./description/with_extension.png)
 
 You can use the chrome extension the edit the input of the loader dynamically.
+
+## Nodes List
+
+- TextFormatter/BasicNodes/LoRALoader_Text
+- TextFormatter/BasicNodes/CheckPointLoader_Text
