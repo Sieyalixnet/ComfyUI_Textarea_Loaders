@@ -1,0 +1,14 @@
+[project]
+name = "comfyui_textarea_loaders"
+description = "An easy custom node that makes the some loaders' input as Text instead of file selector.\nFor example, there are many characters in different loras respectively. If you want to generate different characters' pictures, you have to select corresponding lora, and then edit the prompt. It may cost much time.\nTo solve this problem, You can use it with a chrome extension https://github.com/Sieyalixnet/ComfyUI-Prompt-Formatter-Extension that makes the queue prompt easier when you dealing with massive loras and prompt."
+version = "1.0.0"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/Sieyalixnet/ComfyUI_Textarea_Loaders"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI_Textarea_Loaders"
+Icon = ""
